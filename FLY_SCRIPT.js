@@ -21,8 +21,11 @@ document.addEventListener('keyup', e => {
 document.addEventListener('keydown', async e => {
   if (e.key.toLowerCase() === ']' && !keyPressedOnce[']']) {
     keyPressedOnce[']'] = true;
-    flying = false;
-    alert("Flying cheats disabled");
+    if (flying === true) {
+      flying = false;
+      GRAVITY = 2000;
+      alert("Flying cheats disabled");
+    }
   }
 });
 
