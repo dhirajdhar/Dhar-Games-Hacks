@@ -23,7 +23,7 @@ document.addEventListener('keydown', async e => {
     keyPressedOnce[']'] = true;
     if (flying === true) {
       flying = false;
-      GRAVITY = 2000;
+      GRAVITY = -2000;
       alert("Flying cheats disabled");
     }
   }
